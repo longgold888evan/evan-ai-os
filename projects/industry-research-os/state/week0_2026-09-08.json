@@ -1,0 +1,303 @@
+{
+  "state_version": "layer1_v1.2_execution_rev1_week0",
+  "scan_date": "2026-09-08",
+  "information_cutoff": "2026-09-08",
+  "previous_scan_date": null,
+  "week_number": 0,
+  "investable_scope": "US-listed operating-company common stocks and US-listed ADR/ADS only",
+  "methodology_version": "v1.2 FROZEN",
+  "execution_revision": "Rev.1",
+  "sec_feed_complete": false,
+  "sec_feed_note": "Week-0 research run used broad Web/SEC search, not audited full daily-index ingestion. Full-feed completeness begins once deterministic ingester is run.",
+  "industry_radar": [
+    {
+      "structural_change": "Enterprise agentic AI",
+      "stage": "ACCELERATING",
+      "direction": "STRENGTHENING",
+      "thesis": "Agents moving from assistive features toward production workflows, ARR and measurable usage.",
+      "stage_confidence": "UNASSESSED_WEEK0"
+    },
+    {
+      "structural_change": "AI security / agent governance",
+      "stage": "ACCELERATING",
+      "direction": "STRENGTHENING",
+      "thesis": "More autonomous agents expand identity, permission, runtime and governance attack surfaces.",
+      "stage_confidence": "UNASSESSED_WEEK0"
+    },
+    {
+      "structural_change": "Agentic commerce",
+      "stage": "VALIDATING",
+      "direction": "STRENGTHENING",
+      "thesis": "AI-driven product discovery is beginning to create measurable commerce traffic/conversion.",
+      "stage_confidence": "UNASSESSED_WEEK0"
+    },
+    {
+      "structural_change": "Custom AI silicon",
+      "stage": "ACCELERATING",
+      "direction": "STRENGTHENING",
+      "thesis": "Hyperscaler custom accelerators diversify spend beyond merchant GPUs.",
+      "stage_confidence": "UNASSESSED_WEEK0"
+    },
+    {
+      "structural_change": "HBM / advanced memory",
+      "stage": "ACCELERATING",
+      "direction": "STRENGTHENING",
+      "thesis": "AI memory demand remains supply-constrained with multi-year capacity buildout.",
+      "stage_confidence": "UNASSESSED_WEEK0"
+    },
+    {
+      "structural_change": "AI networking / optics",
+      "stage": "ACCELERATING",
+      "direction": "STRENGTHENING",
+      "thesis": "Scale-out cluster bandwidth/power constraints shift value toward networking and optical components.",
+      "stage_confidence": "UNASSESSED_WEEK0"
+    },
+    {
+      "structural_change": "Edge AI / ultra-low-power compute",
+      "stage": "VALIDATING",
+      "direction": "STRENGTHENING",
+      "thesis": "AI inference expands into low-power edge devices; early company-level demand inflections visible.",
+      "stage_confidence": "UNASSESSED_WEEK0"
+    },
+    {
+      "structural_change": "Data-center power / grid equipment",
+      "stage": "ACCELERATING",
+      "direction": "STRENGTHENING",
+      "thesis": "Grid connection, transformers, switchgear, generation and cooling remain key physical bottlenecks.",
+      "stage_confidence": "UNASSESSED_WEEK0"
+    },
+    {
+      "structural_change": "Behind-the-meter power / microgrids",
+      "stage": "VALIDATING→ACCELERATING",
+      "direction": "STRENGTHENING",
+      "thesis": "Hyperscalers increasingly pursue on-site generation/storage where grid interconnection is slow.",
+      "stage_confidence": "UNASSESSED_WEEK0"
+    },
+    {
+      "structural_change": "Nuclear / HALEU fuel cycle",
+      "stage": "VALIDATING→ACCELERATING",
+      "direction": "STRENGTHENING",
+      "thesis": "New enrichment capacity and government-backed domestic fuel-chain investment are moving toward commercial scale.",
+      "stage_confidence": "UNASSESSED_WEEK0"
+    },
+    {
+      "structural_change": "Data-center physical build / fiber",
+      "stage": "ACCELERATING",
+      "direction": "STRENGTHENING",
+      "thesis": "Fiber, building systems, power solutions and interconnection backlogs remain strong.",
+      "stage_confidence": "UNASSESSED_WEEK0"
+    },
+    {
+      "structural_change": "Industrial reshoring / automation",
+      "stage": "VALIDATING",
+      "direction": "STABLE→STRENGTHENING",
+      "thesis": "Domestic capex and labor economics support automation, but not all robotics subthemes are commercially mature.",
+      "stage_confidence": "UNASSESSED_WEEK0"
+    },
+    {
+      "structural_change": "Defense low-cost autonomy / localization",
+      "stage": "ACCELERATING",
+      "direction": "STRENGTHENING",
+      "thesis": "US drone/autonomy demand is constrained by domestic production and component capacity.",
+      "stage_confidence": "UNASSESSED_WEEK0"
+    },
+    {
+      "structural_change": "Defense electronics / missile supply chain",
+      "stage": "ACCELERATING",
+      "direction": "STRENGTHENING",
+      "thesis": "Bookings/backlogs at defense electronics and component suppliers show strong program demand.",
+      "stage_confidence": "UNASSESSED_WEEK0"
+    },
+    {
+      "structural_change": "Space launch / satellite infrastructure",
+      "stage": "ACCELERATING",
+      "direction": "STRENGTHENING",
+      "thesis": "Launch capacity and sovereign-access bottlenecks support alternative launch and space-system suppliers.",
+      "stage_confidence": "UNASSESSED_WEEK0"
+    },
+    {
+      "structural_change": "Direct-to-device satellite-mobile",
+      "stage": "VALIDATING",
+      "direction": "STRENGTHENING",
+      "thesis": "Satellite spectrum and terrestrial-mobile integration are becoming strategic telecom infrastructure.",
+      "stage_confidence": "UNASSESSED_WEEK0"
+    },
+    {
+      "structural_change": "GLP-1 expansion / segmentation",
+      "stage": "ACCELERATING",
+      "direction": "STRENGTHENING",
+      "thesis": "Oral, pediatric and geographic expansion broaden obesity treatment beyond first-generation injections.",
+      "stage_confidence": "UNASSESSED_WEEK0"
+    },
+    {
+      "structural_change": "MedTech procedural platforms",
+      "stage": "VALIDATING→ACCELERATING",
+      "direction": "STRENGTHENING",
+      "thesis": "Robotic surgery, PFA and specialty device platforms expand penetration; competition also rising.",
+      "stage_confidence": "UNASSESSED_WEEK0"
+    },
+    {
+      "structural_change": "AI drug discovery",
+      "stage": "VALIDATING",
+      "direction": "STRENGTHENING",
+      "thesis": "More pharma companies are licensing AI research platforms, but clinical validation remains the hard gate.",
+      "stage_confidence": "UNASSESSED_WEEK0"
+    },
+    {
+      "structural_change": "Stablecoin regulated rails",
+      "stage": "ACCELERATING",
+      "direction": "STRENGTHENING",
+      "thesis": "Stablecoins are becoming regulated payment/settlement infrastructure with rapid on-chain volume growth.",
+      "stage_confidence": "UNASSESSED_WEEK0"
+    },
+    {
+      "structural_change": "Tokenized / continuous / prediction markets",
+      "stage": "VALIDATING→ACCELERATING",
+      "direction": "STRENGTHENING",
+      "thesis": "Event contracts, tokenization and always-on markets are moving from niche products toward market structure.",
+      "stage_confidence": "UNASSESSED_WEEK0"
+    },
+    {
+      "structural_change": "Robotaxi commercialization",
+      "stage": "ACCELERATING",
+      "direction": "STRENGTHENING",
+      "thesis": "Paid services and city expansion show autonomous ride-hailing moving beyond pilot phase.",
+      "stage_confidence": "UNASSESSED_WEEK0"
+    },
+    {
+      "structural_change": "Commercial aerospace supply chain",
+      "stage": "ACCELERATING",
+      "direction": "STRENGTHENING",
+      "thesis": "Aircraft deliveries/orderbooks remain strong, supporting component suppliers with scarce capacity.",
+      "stage_confidence": "UNASSESSED_WEEK0"
+    },
+    {
+      "structural_change": "Critical-mineral localization",
+      "stage": "ACCELERATING",
+      "direction": "STRENGTHENING",
+      "thesis": "Policy and supply-chain security drive US-aligned rare-earth and critical-material capacity.",
+      "stage_confidence": "UNASSESSED_WEEK0"
+    },
+    {
+      "structural_change": "Copper / electrification scarcity",
+      "stage": "VALIDATING→ACCELERATING",
+      "direction": "STRENGTHENING",
+      "thesis": "Grid, data center and electrification demand meets constrained mine supply.",
+      "stage_confidence": "UNASSESSED_WEEK0"
+    },
+    {
+      "structural_change": "Semiconductor / aerospace specialty materials",
+      "stage": "VALIDATING→ACCELERATING",
+      "direction": "STRENGTHENING",
+      "thesis": "Advanced materials see broad demand across semis, defense, space, power and telecom.",
+      "stage_confidence": "UNASSESSED_WEEK0"
+    },
+    {
+      "structural_change": "Water / desalination for data centers & industry",
+      "stage": "VALIDATING",
+      "direction": "STRENGTHENING",
+      "thesis": "Produced-water reuse and desalination emerge as constraints/opportunities around high-density compute and industry.",
+      "stage_confidence": "UNASSESSED_WEEK0"
+    },
+    {
+      "structural_change": "Long-duration storage / bromine chemistry",
+      "stage": "VALIDATING",
+      "direction": "STRENGTHENING",
+      "thesis": "Early commercial demand and new capacity investment suggest optionality, not yet broad validation.",
+      "stage_confidence": "UNASSESSED_WEEK0"
+    }
+  ],
+  "a_v5_now": [
+    {
+      "ticker": "GNRC",
+      "recall_thesis": "AI data-center backup power",
+      "why_now": "Hyperscaler agreements + ~$1.6B data-center backlog + capacity expansion.",
+      "queue": "A_V5_NOW"
+    },
+    {
+      "ticker": "POWL",
+      "recall_thesis": "Electrical / behind-the-meter power",
+      "why_now": "$2.4B backlog; >$400M data-center order; data-center awards becoming material.",
+      "queue": "A_V5_NOW"
+    },
+    {
+      "ticker": "WCC",
+      "recall_thesis": "Grid + data-center distribution",
+      "why_now": "Record sales; data-center sales ~+45%; backlog ~+60%; grid-services wins.",
+      "queue": "A_V5_NOW"
+    },
+    {
+      "ticker": "DY",
+      "recall_thesis": "Fiber / digital infrastructure",
+      "why_now": "Record revenue; $12.24B backlog; long-haul/middle-mile/inside-the-fence fiber deployment.",
+      "queue": "A_V5_NOW"
+    },
+    {
+      "ticker": "AMBQ",
+      "recall_thesis": "Edge AI semiconductor",
+      "why_now": "~90% revenue growth; edge-AI demand step-change; supply constraints imply demand exceeds current capacity.",
+      "queue": "A_V5_NOW"
+    },
+    {
+      "ticker": "MTRN",
+      "recall_thesis": "Advanced materials",
+      "why_now": "Record backlog/EBITDA; strength across defense, space, semis, energy and data centers.",
+      "queue": "A_V5_NOW"
+    },
+    {
+      "ticker": "MRCY",
+      "recall_thesis": "Defense electronics",
+      "why_now": "Record bookings +93%; book-to-bill 2.28; backlog >$1.9B.",
+      "queue": "A_V5_NOW"
+    },
+    {
+      "ticker": "KRMN",
+      "recall_thesis": "Space & defense components",
+      "why_now": "Record revenue/backlog; nearly $500M quarterly bookings; long-term defense/space agreements.",
+      "queue": "A_V5_NOW"
+    },
+    {
+      "ticker": "RKLB",
+      "recall_thesis": "Launch + vertically integrated space systems",
+      "why_now": "Record revenue/backlog; 90+ launch backlog; strategic vertical integration.",
+      "queue": "A_V5_NOW"
+    },
+    {
+      "ticker": "LIVN",
+      "recall_thesis": "Specialty MedTech",
+      "why_now": "Double-digit growth; guidance raised; supply agreement to remove critical oxygenator bottleneck.",
+      "queue": "A_V5_NOW"
+    },
+    {
+      "ticker": "LEU",
+      "recall_thesis": "HALEU enrichment",
+      "why_now": "$900M DOE commercial-scale task order + $3B contingent enrichment backlog; strategic domestic bottleneck.",
+      "queue": "A_V5_NOW"
+    },
+    {
+      "ticker": "UUUU",
+      "recall_thesis": "Critical minerals / rare earths",
+      "why_now": "Conditional $725M US financing commitment for domestic processing/rare-earth metals capacity.",
+      "queue": "A_V5_NOW"
+    },
+    {
+      "ticker": "CRCL",
+      "recall_thesis": "Stablecoin rails",
+      "why_now": "USDC circulation +19%; on-chain volume +151%; regulated/institutional network expansion.",
+      "queue": "A_V5_NOW"
+    },
+    {
+      "ticker": "HOOD",
+      "recall_thesis": "Prediction/event contracts + market structure",
+      "why_now": "Revenue +32%; event-contract revenue >10x, showing a new business line becoming material.",
+      "queue": "A_V5_NOW"
+    },
+    {
+      "ticker": "TTI",
+      "recall_thesis": "Water + LDES bromine optionality",
+      "why_now": "Bromine FID, zinc-bromide electrolyte demand, desalination/data-center water commercialization work.",
+      "queue": "A_V5_NOW"
+    }
+  ],
+  "next_run_delta_policy": "Compare next persisted state against this Week-0 baseline; do not infer weekly deltas from 30/90D evidence alone."
+}
