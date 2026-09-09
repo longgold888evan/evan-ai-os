@@ -6,6 +6,18 @@
 - AI agent rules: `AGENTS.md`
 - Repository overview: `README.md`
 
+## Memory / Knowledge Promotion
+
+- Canonical promotion workflow: `workflows/memory_knowledge_promotion.md`
+- Canonical promotion eval: `evals/knowledge_promotion_eval.md`
+- Knowledge candidate template: `templates/knowledge_candidate.md`
+- Decision record template: `templates/decision_record.md`
+- Skill/workflow promotion template: `templates/skill_promotion_record.md`
+- Machine-readable knowledge index: `registry/knowledge_registry.yaml`
+- Registry contract: `registry/README.md`
+- Governance decision: `knowledge/decisions/knowledge_promotion_governance.md`
+- Capture queue: `inbox/`
+
 ## Canonical investing stack
 
 - Industry skill authority map: `skills/industry-analysis/CANONICAL.md`
@@ -32,6 +44,7 @@
 - Prompts: `prompts/`
 - Evals: `evals/`
 - Templates: `templates/`
+- Registry: `registry/`
 
 ## Projects and capture
 
