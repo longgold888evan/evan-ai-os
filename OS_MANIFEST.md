@@ -17,6 +17,8 @@
 
 In shorthand, an asset can therefore be both **CANONICAL + FROZEN** or **CANONICAL + ACTIVE**.
 
+`VALIDATED` is intentionally **not** a lifecycle state. It is a promotion gate between DRAFT and ACTIVE, governed by the Memory / Knowledge Promotion Workflow.
+
 ## 2. Conflict precedence
 
 When two artifacts disagree, use this order:
@@ -43,6 +45,10 @@ A downstream execution layer may consume an upstream frozen methodology, but it 
 
 | Asset ID | Path / Source | Kind | Authority | Lifecycle | Version / Pin | Mutation policy |
 |---|---|---|---|---|---|---|
+| `knowledge-promotion-workflow` | `workflows/memory_knowledge_promotion.md` | memory / knowledge promotion workflow | CANONICAL | ACTIVE | v1, 2026-09-10 | May evolve when repeated promotion failures expose a systematic problem. Never auto-promote drafts to canonical/frozen. |
+| `knowledge-promotion-eval` | `evals/knowledge_promotion_eval.md` | promotion evaluation rubric | CANONICAL | ACTIVE | v1, 2026-09-10 | May evolve with the promotion workflow; hard sensitivity/conflict vetoes must not be weakened silently. |
+| `knowledge-registry` | `registry/knowledge_registry.yaml` | machine-readable navigation index | SUPPORTING | ACTIVE | schema v1 | Navigation only. Must never override the Manifest or underlying artifact. |
+| `knowledge-promotion-governance` | `knowledge/decisions/knowledge_promotion_governance.md` | governance decision | SUPPORTING | ACTIVE | 2026-09-10 | Supersede with a new Decision Record if governance changes materially. |
 | `industry-analysis-v5` | Upstream: `longgold888evan/industry-research-os/skills/industry_analysis_skill_v5.md` | research / underwriting skill | CANONICAL | FROZEN | v5.0, 2026-09-08; SHA-256 `8f7d010183b8238fb6d0d21c2cf402a54c3ca7c2b4dfe464c41d25bde4be09f6`; upstream blob `1a97dde5fc4db0115700e745d1e7f271b5bde43e` | Never edit in place. Create v6+ only after explicit methodology upgrade decision. |
 | `industry-discovery-layer1` | Upstream: `longgold888evan/industry-research-os/skills/layer1_v1_2_frozen_execution_rev1.md` | discovery / winner-recall skill | CANONICAL | FROZEN | v1.2 FROZEN, Execution Rev.1; upstream blob `31d575810159d0a401d0bd34a8c92a2111e559b7` | Never edit in place. Execution hardening that changes no alpha methodology must be labeled execution revision; methodology change requires new version. |
 | `industry-discovery-layer1-baseline` | Historical source: `industry_evolution_winner_recall_skill_v1_2_frozen_2026-09-08.md` | frozen methodology baseline | CANONICAL | FROZEN | 2026-09-08; SHA-256 `fd27798fa6b08b4f10ed4704127622c62d4b71aeb870e8825909a4d6f5714d3c` | Preserve for provenance; operational use should prefer Execution Rev.1 because it explicitly states no alpha-methodology change. |
@@ -121,14 +127,20 @@ Before acting, an AI agent must:
 6. Preserve Point-in-Time / provenance requirements of the research skills.
 7. For Industry Research OS implementation changes, modify `industry-research-os`; update this manifest/link only when authority/version/status changes.
 8. Record important irreversible or framework-level choices in `knowledge/decisions/`.
+9. When promoting knowledge from conversation/project work, follow `workflows/memory_knowledge_promotion.md` and `evals/knowledge_promotion_eval.md`.
+10. Prefer updating/superseding existing durable knowledge over creating near-duplicate notes.
+11. Do not store credentials or raw authentication material in this repository.
 
 ## 7. Promotion rules
 
+### Conversation / Inbox → DRAFT
+Requires plausible future value, classification, provenance, and a destination hypothesis. Long or interesting conversation alone is not sufficient.
+
 ### DRAFT → ACTIVE
-Requires a clear use case, owner, input/output contract, and at least one successful real use or eval.
+Requires passing the validation gate in `evals/knowledge_promotion_eval.md`: durability, provenance, truth labeling, conflict check, sensitivity check, destination check, and explicit update semantics.
 
 ### ACTIVE → CANONICAL
-Requires an explicit decision that this artifact is the source of truth for a named capability.
+Requires an explicit decision that this artifact is the source of truth for a named capability and successful real use/eval.
 
 ### CANONICAL + ACTIVE → FROZEN
 Requires an explicit freeze decision, immutable version identifier, and ideally a content hash.
@@ -136,9 +148,48 @@ Requires an explicit freeze decision, immutable version identifier, and ideally 
 ### Any → ARCHIVED
 Keep provenance and replacement pointer. Do not silently delete intellectual history.
 
+### Method → Skill / Workflow
+A one-off successful technique remains a method. Default promotion requires at least two independent successful uses, or one production-quality use plus an explicit promotion decision, together with a generalized input/output contract and eval cases.
+
 ## 8. Current migration notes
 
 - The exact frozen v5 content supplied on 2026-09-10 has SHA-256 `8f7d010183b8238fb6d0d21c2cf402a54c3ca7c2b4dfe464c41d25bde4be09f6`; this matches the dependency hash declared by the execution skill.
 - The same canonical v5 exists in the operational `industry-research-os` repo, so this OS pins that upstream artifact rather than creating a second mutable source of truth.
 - The canonical Investment Execution Skill v1 is stored directly in this repo because it is a reusable cross-project operating constitution rather than implementation code.
 - Week-0 state is mirrored here only as an immutable reference snapshot; live registry updates belong to the operational project until explicitly promoted.
+
+## 9. Knowledge promotion graph
+
+```text
+CHATGPT MEMORY / CONVERSATION / FILE / PROJECT
+                  ↓
+          transient working context
+                  ↓
+             future value?
+             /          \
+           NO            YES
+           ↓              ↓
+        leave chat      CAPTURE
+                          ↓
+                       CLASSIFY
+                          ↓
+                        DRAFT
+                          ↓
+                  VALIDATION GATE
+                          ↓
+                        ACTIVE
+                     /           \
+             important choice   repeated method
+                    ↓                  ↓
+             Decision Record      Skill / Workflow
+                                       ↓
+                                      Eval
+                                       ↓
+                                  CANONICAL ACTIVE
+                                       ↓
+                              explicit freeze only
+                                       ↓
+                                    FROZEN
+```
+
+The purpose is to turn conversation into a **selective knowledge flywheel**, not to mirror conversation history into Git.
