@@ -1,0 +1,40 @@
+schema_version: 1
+role: navigation_index_only
+authority_note: "OS_MANIFEST.md governs canonical/frozen/source-of-truth status; underlying artifacts govern content."
+
+entries:
+  - id: knowledge-promotion-workflow
+    path: workflows/memory_knowledge_promotion.md
+    kind: WORKFLOW
+    domain: ai-os-governance
+    first_promoted: 2026-09-10
+    last_reviewed: 2026-09-10
+    review_trigger: "Repeated promotion errors, excessive context pollution, or missing durable knowledge across independent cases."
+    status_note: "Canonical active workflow for conversation/inbox -> durable knowledge promotion."
+
+  - id: industry-research-os-governance
+    path: knowledge/decisions/industry_research_os_governance.md
+    kind: DECISION
+    domain: investing-research-os
+    first_promoted: 2026-09-10
+    last_reviewed: 2026-09-10
+    review_trigger: "Deliberate source-of-truth migration or repository architecture change."
+    status_note: "Separates frozen intellectual assets from mutable implementation."
+
+  - id: investment-philosophy
+    path: knowledge/investing/investment_philosophy.md
+    kind: PRINCIPLE
+    domain: investing
+    first_promoted: null
+    last_reviewed: null
+    review_trigger: "Explicit investment-philosophy change."
+    status_note: "Living durable knowledge; see OS_MANIFEST.md for authority/lifecycle."
+
+  - id: career-strategy
+    path: knowledge/career/career_strategy.md
+    kind: PRINCIPLE
+    domain: career
+    first_promoted: null
+    last_reviewed: null
+    review_trigger: "Major role/goal/time-horizon change."
+    status_note: "Living durable knowledge; see OS_MANIFEST.md for authority/lifecycle."
