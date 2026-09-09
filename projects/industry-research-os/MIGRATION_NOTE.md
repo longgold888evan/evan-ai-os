@@ -1,0 +1,1 @@
+Canonical project assets are mirrored from `longgold888evan/industry-research-os`. Frozen assets must retain exact content and provenance. Operational code continues to live upstream unless explicitly promoted into this OS.
